@@ -1,7 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Tadaso 20! Welcome to {{title}}!!
-  </h1>
-  <pm-products> </pm-products>
-</div>
+<nav class='navbar navbar-expand navbar-light bg-light'>
+  <a class='navbar-brand'>{{pageTitle}}</a>
+  <ul class='nav nav-pills'>
+    <li><a class='navlink' [routerLink]="['/welcome']">Home</a></li>
+    <li><a class='navlink' [routerLink]="['/product']">Product List</a></li>
+  </ul>
+  <div class='container'>
+    <router-outlet></router-outlet>
+  </div>
+</nav>
